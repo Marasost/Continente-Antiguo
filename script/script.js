@@ -1,22 +1,23 @@
 
 //Llamado de funciones
 crearSelect(generaciones)
-crearInformacionJugadores(jugadoresPrimeraGeneracion,"1")
-crearInformacionJugadores(jugadoresSegundaGeneracion,"2")
-crearInformacionJugadores(jugadoresTerceraGeneracion,"3")
+crearInformacionJugadores(jugadoresPrimeraGeneracion, "1")
+crearInformacionJugadores(jugadoresSegundaGeneracion, "2")
+crearInformacionJugadores(jugadoresTerceraGeneracion, "3")
+
+// Abrir modales 
+const modal = document.getElementById("mainModal")
+const openModal = document.getElementById("open-modal")
+openModal.addEventListener("click", () => {
+    modal.showModal()
+})
 
 
-
-
-
-
-
-
-
-
-
-
-
+// Cerrar modales
+const btnCloseModal = document.getElementById("btn-close-modal")
+btnCloseModal.addEventListener("click", () => {
+    modal.close()
+})
 
 
 
@@ -58,7 +59,7 @@ function crearInformacionJugadores(jugadores, generacion) {
     jugadores.forEach(jugador => {
         let contenedor = document.createElement("div")
         contenedor.setAttribute("class", "jugador")
-        
+
 
         //Crear foto
         let foto = document.createElement("img")
@@ -75,8 +76,8 @@ function crearInformacionJugadores(jugadores, generacion) {
 
         //Crear interaciones jugador
         let interaciones = document.createElement("p")
-        let interacionesTexto = document.createTextNode("Interacciones: "+ jugador.interacciones)
-        interaciones.setAttribute ("class", "interacciones")
+        let interacionesTexto = document.createTextNode("Interacciones: " + jugador.interacciones)
+        interaciones.setAttribute("class", "interacciones")
         interaciones.appendChild(interacionesTexto)
         contenedor.appendChild(interaciones)
 
