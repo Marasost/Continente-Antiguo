@@ -4,7 +4,7 @@ let generaciones = ["Generación 1", "Generación 2", "Generación 3"]
 const jugadoresPrimeraGeneracion = [
     {
         "nombre": "0Hammer",
-        "foto": "/Continente-Antiguo/media/pictures/foto_prueba.png",
+        "foto": "media/pictures/foto_prueba.png",
         "interacciones": "XX"
     },
     {
