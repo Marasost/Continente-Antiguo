@@ -243,6 +243,75 @@ footer p {
     transition: 0.3s;
 }
 
+.mainModalConcurso {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    background-color:#414141;
+
+}
+
+.modal-concurso {
+    width: auto;
+    height: 500px;
+}
+
+.modal-concurso h3{
+    margin-top: 20px;
+    font-size: 35px;
+    color: white;
+}
+
+form label {
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.input-nickname-concurso {
+    width: 200px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1.5px solid rgb(238, 225, 153);
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.input-file-concurso {
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+
+.btn-enviar-concurso {
+    width: 180px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(238, 225, 153);
+    background-color: transparent;
+    color: white;
+}
+
+.btn-enviar-concurso:hover {
+    background-color: rgb(238, 225, 153);
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+
+
+
+
+
 
 .aside-first-section {
     width: 1200px;
@@ -467,17 +536,10 @@ footer p {
     border-radius: 10px;
     border: none;
     text-align: center;
-
 }
 
 .mainModal::backdrop {
     background-color: rgba(0, 0, 0, 0.493);
-}
-
-.mainModal h1 {
-    width: 600px;
-    color: rgb(37, 150, 243);
-    border-bottom: 2px solid rgb(37, 150, 243);
 }
 
 /* Modal MP */

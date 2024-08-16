@@ -68,7 +68,24 @@
                     reconocimiento dentro del mismo.
                     Una vez termines tu decoración, postúlate en el concurso y deja que el resto de jugadores evalúen
                     tu obra razonablemente.</p>
-                <button>Participar</button>
+                <button type="button" id="open-modal">Participar</button>
+                <dialog class="mainModalConcurso" id="mainModal">
+                    <div class="modal-concurso">
+                        <form action="https://formsubmit.co/ba68507ae26c0d9a15f20bfc0a2c8d9a" method="POST"
+                        enctype="multipart/form-data">
+                            <h3>Formulario de inscripción</h3>
+                            <label for="nombre" >Nickname</label><br>
+                            <input class="input-nickname-concurso" type="text" id="nombre" name="Nickname" required><br>
+                            <label for="imagen">Imagenes</label><br>
+                            <input class="input-file-concurso" type="file" accept="image/*" id="imagen" name="Imagen 1" required><br>
+                            <input class="input-file-concurso" type="file" accept="image/*" id="imagen" name="Imagen 2" required><br>
+                            <input class="input-file-concurso" type="file" accept="image/*" id="imagen" name="Imagen 3" required><br>
+                            <input type="submit" class="btn-enviar-concurso" value="Enviar"><br>
+                        </form> <br>
+                        <input type="button" id="btn-close-modal" class="btn btn-danger" value="Cerrar"></button>
+                        
+                    </div>
+                </dialog>
             </div>
         </div>
 
