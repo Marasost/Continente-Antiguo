@@ -15,7 +15,7 @@
 @font-face {
     font-family: "Minecraft-regular";
     src: url(/media/fonts/minecraft-font/MinecraftRegular-Bmg3.otf);
-    font-weight: bold;
+    font-weight: normal;
 }
 
 @font-face {
