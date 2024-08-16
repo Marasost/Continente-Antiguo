@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continente Antiguo</title>
+    <link rel="icon" type="image/png" href="../media/pictures/logo_server_minecraft.png">
+    <link rel="stylesheet" href="../node_modules/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="header-first-section">
+                <img class="logo-server" src="../media/pictures/logo_server_minecraft.png" title="Logo">
+                <p>CONTINENTE ANTIGUO</p>
+            </div>
+            <div class="header-second-section">
+                <a class="link" href="../inicio.html">Inicio</a>
+                <div class="herramientas-container">
+                    <button type="button" class="link dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false"> Herramientas
+                    </button>
+                    <ul class="dropdown-menu herramientas-dropdown-menu">
+                        <li><a href="http://Changingcontinent.minehost.pro:8123/" target="_blank">Mapa web</a></li> 
+                        <li><a href="../pagina_herramientas/canjear_titulos/canjear_titulos.html">Canjear títulos</a></li> 
+                        <li><a href="../pagina_herramientas/canjear_sonidos/canjear_sonidos.html">Sonidos</a></li> 
+                        <li><a href="https://discordapp.com/channels/1228052520362840166/1228052520694317228">Contacto</a></li> 
+                    </ul>
+                </div>
+                <a class="link" href="pagos.html">Pagos</a>
+            </div>
+        </div>
+    </header>
+
+    <aside class="payments-aside">
+        <div id="payment-method-container">
+            <h1>Seleccione método de pago</h1>
+            <div class="cards-container">
+                <div>
+                    <img src="pictures/mercado_pago.jpg" alt="">
+                    <button class="open-modal btn btn-primary">Seleccionar</button>
+
+                </div>
+                <div>
+                    <img src="pictures/pay_pal.webp" alt="">
+                    <button class="btn btn-primary" id="open-paypal-div">Seleccionar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="post-payment-container ocultar" id="post-payment-container">
+            <div class="ocultar" id="mainPaypal">
+                <h2>Pago único</h2>
+                <p>(1 mes de juego)</p>
+                <script
+                    src="https://www.paypal.com/sdk/js?client-id=BAA_m2PUqDHcRm5NRlL29RKrN27JKJYlsgRA18lj3xeIN5wqxUmKJQPGMMjIQkBnrcP5oLBEyLno4OguYc&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+                <div id="paypal-container-679CNZDDZUGGG"></div>
+                <script>
+                    paypal.HostedButtons({
+                        hostedButtonId: "679CNZDDZUGGG",
+                    }).render("#paypal-container-679CNZDDZUGGG")
+                </script>
+            </div>
+            <form id= "form-comprobante" class="ocultar" action="https://formsubmit.co/ba68507ae26c0d9a15f20bfc0a2c8d9a" method="POST"
+                enctype="multipart/form-data">
+                <label for="nombre">Nickname:</label><br>
+                <input class="input-name" type="text" id="nombre" name="Nickname" required><br>
+
+                <label for="imagen">Comprobante:</label><br>
+                <input class="input-file" type="file" id="imagen" name="Comprobante" accept="image/*" required><br>
+
+                <button>Enviar</button>
+            </form>
+        </div>
+
+        <!-- MODAL MERCADO PAGO-->
+        <dialog class="mainModal">
+            <div>
+                <h4>Pago único</h4>
+                <p>(1 mes de juego)</p>
+
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            Residente
+                        </div>
+                        <div class="col">
+                            $1000
+                        </div>
+                        <div class="col">
+                            <input type="submit" class="btn btn-primary btn-seleccionar-plan" value="Seleccionar">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            Residente (VIP)
+                        </div>
+                        <div class="col">
+                            $2000
+                        </div>
+                        <div class="col">
+                            <input type="submit" class="btn btn-primary btn-seleccionar-plan" value="Seleccionar">
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Suscripción</h4>
+                <p>(Cada 15 días durante 3 meses)</p>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            Residente
+                        </div>
+                        <div class="col">
+                            $500
+                        </div>
+                        <div class="col">
+                            <input type="submit" class="btn btn-primary btn-seleccionar-plan" value="Seleccionar">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            Residente (VIP)
+                        </div>
+                        <div class="col">
+                            $1000
+                        </div>
+                        <div class="col">
+                            <input type="submit" class="btn btn-primary btn-seleccionar-plan" value="Seleccionar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-danger btn-close-modal">Cerrar</button>
+            <button class="btn btn-warning" id="btn-cancel">Cancelar selección</button>
+
+            <div>
+                <a class="btn btn-pagar ocultar">
+                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="1462879614-e85f361a-59bd-430d-a518-76c802cd511b" data-source="button">
+                        </script>
+                </a>
+                <a class="btn btn-pagar ocultar">
+                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="1462879614-f60a02ad-0f60-4ec7-9031-94f4ba2dd5a3" data-source="button">
+                        </script>
+                </a>
+                <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084910f959d01913a2f9d6c0dd2"
+                    name="MP-payButton" class='btn btn-primary btn-pagar ocultar'>Suscribirme</a>
+                <script type="text/javascript">
+                        (function () {
+                            function $MPC_load() {
+                                window.$MPC_loaded !== true && (function () {
+                                    var s = document.createElement("script");
+                                    s.type = "text/javascript";
+                                    s.async = true;
+                                    s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
+                                    var x = document.getElementsByTagName('script')[0];
+                                    x.parentNode.insertBefore(s, x);
+                                    window.$MPC_loaded = true;
+                                })();
+                            }
+                            window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
+                        })();
+                </script>
+                <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084910f95b601913a2cb8600e01"
+                    name="MP-payButton" class='btn btn-primary btn-pagar ocultar'>Suscribirme</a>
+                <script type="text/javascript">
+                    (function () {
+                        function $MPC_load() {
+                            window.$MPC_loaded !== true && (function () {
+                                var s = document.createElement("script");
+                                s.type = "text/javascript";
+                                s.async = true;
+                                s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
+                                var x = document.getElementsByTagName('script')[0];
+                                x.parentNode.insertBefore(s, x);
+                                window.$MPC_loaded = true;
+                            })();
+                        }
+                        window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
+                    })();
+                </script>
+            </div>
+        </dialog>
+    </aside>
+
+    <footer>
+        <img src="../media/pictures/logo_server_minecraft.png" title="Logo">
+        <p>CONTINENTE ANTIGUO®</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

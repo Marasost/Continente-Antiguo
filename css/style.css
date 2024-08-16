@@ -1,0 +1,732 @@
+/* ------------------------------------------------------------------------------------------------------------
+-------------------------------------ESTILOS GENERALES (FOOTER Y HEADER)---------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Minecraft-bold";
+    src: url(/media/fonts/minecraft-font/MinecraftBold-nMK1.otf);
+    font-style: bold;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Minecraft-regular";
+    src: url(/media/fonts/minecraft-font/MinecraftRegular-Bmg3.otf);
+    font-style: bold;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Global-font";
+    src: url(/media/fonts/gidole/Gidole-Regular.otf);
+}
+
+body {
+    background-color: #2a2a2a;
+    font-family: "Global-font";
+}
+
+header {
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 10px 3px;
+}
+
+.home-aside {
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header -------------------------------------------------------------------------------------------------- */
+header div {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-first-section {
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header-second-section {
+    width: auto;
+}
+
+.logo-server {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.header-first-section p {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 100px;
+    margin-top: 20px;
+    font-family: Minecraft-bold;
+    color: rgba(255, 255, 255, 0.856);
+}
+
+.link {
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1.5px solid black;
+    text-decoration: none;
+    text-align: center;
+    font-family: Minecraft-regular;
+    color: black;
+    background-color: rgb(238, 225, 153);
+    transition: background-color 0.3s
+}
+
+.link:hover {
+    background-color: rgba(238, 225, 153, 0.815);
+    color: black;
+    transition: background-color 0.3s
+}
+
+.herramientas-container {
+    width: auto;
+}
+
+.herramientas-dropdown-menu {
+    width: auto;
+    height: auto;
+    border-radius: 2px;
+    background-color: #2a2a2a;
+    box-shadow: 0px 5px 10px;
+    margin-top: 10px;
+}
+
+.herramientas-dropdown-menu li {
+    margin: 20px;
+}
+
+.herramientas-dropdown-menu li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+}
+
+.herramientas-dropdown-menu li a:hover {
+    background-color: rgb(58, 58, 58);
+    transition: background-color 0.3s
+}
+
+/* Footer -------------------------------------------------------------------------------------------------- */
+
+footer img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+footer p {
+    font-size: 20px;
+    font-family: Minecraft-bold;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.856);
+}
+
+/* ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------ASIDE PAGINA INICIO--------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+/* Seccion noticias */
+
+.aside-news-section {
+    width: 1200px;
+    height: auto;
+    background-color: #3d3d3d81;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.aside-news-section:hover {
+    box-shadow: 0px 0px 30px rgb(238, 225, 153);
+    transition: 0.9s;
+}
+
+.aside-news-section img{
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+
+.aside-first-section {
+    width: 1200px;
+    display: flex;
+}
+
+.link-generaciones {
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(238, 225, 153);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Minecraft-regular;
+    color: black;
+    transition: background-color 0.3s
+}
+
+.link-generaciones:hover {
+    background-color: rgba(238, 225, 153, 0.815);
+    color: black;
+    transition: background-color 0.3s
+}
+
+.contendor-gen-ds {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-aside h1 {
+    width: auto;
+    height: 50px;
+    color: white;
+    border-bottom: 1px solid white;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.aside-first-section ul {
+    color: rgba(255, 255, 255, 0.849);
+    margin-left: 5px;
+}
+
+.aside-first-section ul li p {
+    color: rgba(255, 255, 255, 0.849);
+    margin: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.aside-first-section img {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.aside-second-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fotoJugador {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.jugador {
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    color: white;
+    text-align: center;
+}
+
+.interacciones {
+    color: rgba(255, 255, 255, 0.507);
+    margin-top: -20px;
+}
+
+.contenido {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clasificacion {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Minecraft-regular";
+    text-align: center;
+    border: 1.5px solid black;
+    font-weight: bold;
+    background-color: rgb(238, 225, 153);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.clasificacion:hover {
+    background-color: rgba(238, 225, 153, 0.815);
+    transition: background-color 0.3s
+}
+
+.btn-discord {
+    background-color: #7289da;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-discord-flecha {
+    background-color: #6d81c9;
+    border: none;
+    border-bottom-right-radius: 5px;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.bi-discord {
+    width: 25px;
+    height: 25px;
+    fill: currentColor;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+.discord-widget {
+    width: 250px;
+    height: 350px;
+    margin-top: -10px;
+    margin-bottom: -15px;
+}
+
+.btn-discord:hover,
+.btn-discord-flecha:hover {
+    background-color: #7e94e2;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.ocultar {
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------ASIDE PAGINA PAGO--------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+.payments-aside {
+    min-height: 400px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payments-aside {
+    display: flex;
+    justify-content: center;
+}
+
+.payments-aside h1 {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cards-container {
+    width: 1200px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards-container div {
+    width: 300px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 10px 5px;
+}
+
+.cards-container div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.cards-container div button {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid rgb(37, 150, 243);
+    color: rgb(37, 150, 243);
+    margin: 30px
+}
+
+.cards-container div button:hover {
+    background-color: rgb(37, 150, 243);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(37, 150, 243);
+    transition: background-color 0.3s
+}
+
+.mainModal {
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+
+}
+
+.mainModal::backdrop {
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.mainModal h1 {
+    width: 600px;
+    color: rgb(37, 150, 243);
+    border-bottom: 2px solid rgb(37, 150, 243);
+}
+
+/* Modal MP */
+.mainModal div {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainModal h4 {
+    margin-top: 15px;
+    width: 600px;
+}
+
+.mainModal p {
+    margin-top: -15px;
+    font-size: 14px;
+    color: rgb(95, 95, 95);
+}
+
+.post-payment-container div h2 {
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.post-payment-container div p {
+    text-align: center;
+    margin-top: -12px;
+    font-size: 14px;
+    color: rgb(182, 182, 182);
+}
+
+
+.text-center {
+    margin-bottom: 10px;
+}
+
+.btn-seleccionar {
+    width: 100px;
+    height: 40px;
+    color: rgb(37, 150, 243);
+    border: 2px solid rgb(37, 150, 243);
+    border-radius: 5px;
+}
+
+.btn-seleccionar:hover {
+    background-color: rgb(37, 150, 243);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s
+}
+
+.btn-close-modal {
+    margin: 20px;
+}
+
+.btn-cancel {
+    margin: 20px;
+}
+
+.btn-pagar {
+    margin-bottom: 20px;
+}
+
+/* Modal PAYPAL */
+.paypal-btn-container {
+    margin-top: 20px;
+}
+
+/* Formulario para enviar comprobante */
+.post-payment-container {
+    width: 600px;
+    justify-content: center;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-payment-container form {
+    width: 300px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.post-payment-container form label {
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
+.input-name {
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 225, 153);
+}
+
+.input-file {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.post-payment-container form button {
+    margin: 25px;
+    width: 200px;
+    height: 30px;
+    border: 1.5px solid rgb(238, 225, 153);
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.post-payment-container form button:hover {
+    background-color: rgb(238, 225, 153);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+-------------------------------------------PAGINA HERRAMIENTAS (CANJEAR SONIDO)----------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+
+.sounds-aside {
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.sounds-aside h1 {
+    color: white;
+    width: 100%;
+    border-bottom: 1.5px solid white;
+}
+
+.aclaracion {
+    text-align: center;
+    color: rgb(192, 192, 192);
+}
+
+.sounds-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.nombre-canjeables {
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.row-audio {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #2e2e2e;
+}
+
+.row-audio:hover {
+    background-color: #383838;
+    transition: background-color 0.3s;
+}
+
+.audio {
+    margin-top: 10px;
+}
+
+.requisito-audio {
+    color: rgb(141, 141, 141);
+    margin-top: 10px;
+}
+
+.btn-ir {
+    padding: 8px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 225, 153);
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.btn-ir:hover {
+    border: 1.5px solid rgb(238, 225, 153);
+    background-color: rgb(238, 225, 153);
+    color: black;
+    transition: background-color 0.3s
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+-------------------------------------------PAGINA HERRAMIENTAS (CANJEAR TITULOS)----------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+
+.col-input {
+    text-align: end;
+}
+
+.decripcion-titulo {
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.btn-seleccionar {
+    width: 120px;
+    height: 38px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 225, 153);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn-seleccionar:hover {
+    border: 1.5px solid rgb(238, 225, 153);
+    background-color: rgb(238, 225, 153);
+    color: black;
+    transition: background-color 0.3s
+}
+
+.btn-seleccionado {
+    border: 1.5px solid rgb(238, 225, 153);
+    background-color: rgb(238, 225, 153);
+    color: black;
+}
+
+.btn-quitar-seleccion {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn-quitar-seleccion:hover {
+    background-color: #2a2a2a;
+    transition: background-color 0.3s
+}
+
+.button-canjear-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-canjear {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 225, 153);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn-canjear:hover {
+    border: 1.5px solid rgb(238, 225, 153);
+    background-color: rgb(238, 225, 153);
+    color: black;
+    transition: background-color 0.3s
+}
+
+.form-titulo {
+    text-align: center;
+}
+
+.nickname-solicitud-titulo {
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 225, 153);
+    text-align: center;
+}
+
+.nickname-solicitud-titulo:disabled {
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+.btn-enviar-solicitud {
+    width: 200px;
+    height: 30px;
+    border: 1.5px solid rgb(238, 225, 153);
+    background-color: rgb(238, 225, 153);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.btn-enviar-solicitud:hover {
+    background-color: rgba(238, 225, 153, 0.815);
+    color: black;
+    transition: background-color 0.3s
+}
+
+.form-titulo textarea {
+    width: 220px;
+    height: 150px;
+    margin: 20px;
+    border: 1.5px solid rgb(238, 225, 153);
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.781);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continente Antiguo</title>
+    <link rel="icon" type="image/png" href="../../media/pictures/logo_server_minecraft.png">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="header-first-section">
+                <img class="logo-server" src="../../media/pictures/logo_server_minecraft.png" title="Logo">
+                <p>CONTINENTE ANTIGUO</p>
+            </div>
+            <div class="header-second-section">
+                <a class="link" href="../../inicio.html">Inicio</a>
+                <div class="herramientas-container">
+                    <button type="button" class="link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                        aria-expanded="false"> Herramientas
+                    </button>
+                    <ul class="dropdown-menu herramientas-dropdown-menu">
+                        <li><a href="http://Changingcontinent.minehost.pro:8123/" target="_blank">Mapa web</a></li>
+                        <li><a href="canjear_titulos.html">Canjear títulos</a></li>
+                        <li><a href="../canjear_sonidos/canjear_sonidos.html">Sonidos</a></li>
+                        <li><a
+                                href="https://discordapp.com/channels/1228052520362840166/1228052520694317228">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="link" href="../../pagina_pago/pagos.html">Pagos</a>
+            </div>
+        </div>
+    </header>
+
+    <aside class="sounds-aside">
+        <div class="titles-container" id="titles-container">
+        </div>
+
+        <form class="form-titulo ocultar" id="div-form-titulo">
+            <input class="nickname-solicitud-titulo" id="nickname-solicitud-titulo" type="text" placeholder="Nickname"> <br>
+            <textarea id="textarea-solicitud-titulo" disabled placeholder="Debes seleccionar algún título"></textarea> <br>
+            <input class="btn-enviar-solicitud" type="button" id="btn-enviar-solicitud" value="Enviar">
+        </form>
+
+        <div class="button-canjear-container">
+            <button class="btn-canjear" id="btn-canjear-titulo">Solicitar</button>
+            <button type="submit" class="btn-canjear ocultar" id="btn-volver-titulo">Volver</button>
+        </div>
+    </aside>
+
+
+    <footer>
+        <img src="../../media/pictures/logo_server_minecraft.png" title="Logo">
+        <p>CONTINENTE ANTIGUO®</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="../../node_modules/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="script/info_titulos.js"> </script>
+    <script src="script/script.js"> </script>
+</body>
+
+</html>
