@@ -9,12 +9,14 @@
 @font-face {
     font-family: "Minecraft-bold";
     src: url(/media/fonts/minecraft-font/MinecraftBold-nMK1.otf);
+    font-style: bold;
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Minecraft-regular";
     src: url(/media/fonts/minecraft-font/MinecraftRegular-Bmg3.otf);
+    font-style: bold;
     font-weight: bold;
 }
 
