@@ -8,21 +8,21 @@
 
 @font-face {
     font-family: "Minecraft-bold";
-    src: url(/media/fonts/minecraft-font/MinecraftBold-nMK1.otf);
+    src: url(/Continente-Antiguo/media/fonts/minecraft-font/MinecraftBold-nMK1.otf);
     font-style: bold;
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Minecraft-regular";
-    src: url(/media/fonts/minecraft-font/MinecraftRegular-Bmg3.otf);
+    src: url(/Continente-Antiguo/media/fonts/minecraft-font/MinecraftRegular-Bmg3.otf);
     font-style: bold;
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Global-font";
-    src: url(/media/fonts/gidole/Gidole-Regular.otf);
+    src: url(/Continente-Antiguo/media/fonts/gidole/Gidole-Regular.otf);
 }
 
 body {
