@@ -244,7 +244,7 @@ footer p {
 }
 
 .mainModalConcurso {
-    width: 500px;
+    width: auto;
     margin: 0 auto;
     margin-top: 10px;
     border-radius: 10px;
@@ -256,58 +256,68 @@ footer p {
 
 .modal-concurso {
     width: auto;
-    height: 500px;
+    height: auto;
+    padding-bottom: 20px;
 }
 
-.modal-concurso h3{
-    margin-top: 20px;
-    font-size: 35px;
-    color: white;
+.participante {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-form label {
-    color: white;
-    font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+.participante img {
+    margin: 10px;
+    width: auto;
+    height: 200px;
 }
 
-.input-nickname-concurso {
-    width: 200px;
-    border-radius: 5px;
-    background-color: transparent;
-    border: 1.5px solid rgb(238, 225, 153);
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
+.section-votacion {
+    display: flex;
+    justify-content: center;
 }
 
-.input-file-concurso {
-    width: 200px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
-}
-
-
-.btn-enviar-concurso {
-    width: 180px;
+.section-votacion div {
     margin: 20px;
+    padding: 5px;
+    font-size: 18px;
     border-radius: 5px;
-    border: 1.5px solid rgb(238, 225, 153);
-    background-color: transparent;
+    background-color: rgba(238, 225, 153, 0.5);
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.section-votacion label {
     color: white;
 }
 
-.btn-enviar-concurso:hover {
+.section-votacion span {
+    color: rgb(238, 225, 153);
+}
+
+.input-votante{
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    border: 2px solid rgb(238, 225, 153);
+}
+
+.input-enviar {
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    color: white;
+    border: 2px solid rgb(238, 225, 153);
+    background-color: transparent;
+}
+
+.input-enviar:hover {
+    color: black;
     background-color: rgb(238, 225, 153);
-    color: rgb(0, 0, 0);
     transition: 0.3s;
 }
-
-
 
 
 

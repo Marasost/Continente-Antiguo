@@ -12,12 +12,94 @@ openModal.addEventListener("click", () => {
     modal.showModal()
 })
 
+//Calificaciones Dark
+document.querySelectorAll('.valueInputDark').forEach(input => {
+    input.addEventListener('input', function () {
+        this.previousElementSibling.textContent = this.value;
+    });
+});
 
-// Cerrar modales
-const btnCloseModal = document.getElementById("btn-close-modal")
-btnCloseModal.addEventListener("click", () => {
-    modal.close()
+let btnEnviarCalificacionesDark =document.getElementById ("btn-enviar-calificaciones-dark")
+btnEnviarCalificacionesDark.addEventListener("click", ()=>{
+    let creatividad = document.getElementById ("valueCreatividadInputDark").value
+    let funcionalidad = document.getElementById ("valueFuncionalidadInputDark").value
+    let gustoPersonal = document.getElementById ("valueGustoPersonalInputDark").value
+    let inputVotante = document.getElementById ("input-votante-dark").value
+    fetch('https://discord.com/api/webhooks/1275584883300896858/mCO3fHigj8VL8Qt2H14d5_ZyzyPTnnwqpBgReXxXR6ZBm8jM8eOraDSEQLFD0aXhezTT', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            content: `----------------------------------- \n**Nether de DarkSharkUwU **\nVotacion de ${inputVotante}\nCreatividad: ${creatividad}\nFuncionalidad: ${funcionalidad}\nGusto personal: ${gustoPersonal}\n-----------------------------------`
+        })
+    })
+
+    btnEnviarCalificacionesDark.setAttribute("disabled", "disabled")
+    btnEnviarCalificacionesDark.value = ("Enviado ✔")
+    btnEnviarCalificacionesDark.classList.add ("btn-seleccionado")
+
 })
+
+//Calificaciones Potra
+document.querySelectorAll('.valueInputPotra').forEach(input => {
+    input.addEventListener('input', function () {
+        this.previousElementSibling.textContent = this.value;
+    });
+});
+
+let btnEnviarCalificacionesPotra =document.getElementById ("btn-enviar-calificaciones-potra")
+btnEnviarCalificacionesPotra.addEventListener("click", ()=>{
+    let creatividad = document.getElementById ("valueCreatividadInputPotra").value
+    let funcionalidad = document.getElementById ("valueFuncionalidadInputPotra").value
+    let gustoPersonal = document.getElementById ("valueGustoPersonalInputPotra").value
+    let inputVotante = document.getElementById ("input-votante-potra").value
+    fetch('https://discord.com/api/webhooks/1275584883300896858/mCO3fHigj8VL8Qt2H14d5_ZyzyPTnnwqpBgReXxXR6ZBm8jM8eOraDSEQLFD0aXhezTT', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            content: `----------------------------------- \n**Nether de Potra **\nVotacion de ${inputVotante}\nCreatividad: ${creatividad}\nFuncionalidad: ${funcionalidad}\nGusto personal: ${gustoPersonal}\n-----------------------------------`
+        })
+    })
+
+    btnEnviarCalificacionesPotra.setAttribute("disabled", "disabled")
+    btnEnviarCalificacionesPotra.value = ("Enviado ✔")
+    btnEnviarCalificacionesPotra.classList.add ("btn-seleccionado")
+
+})
+
+//Calificaciones Potra
+document.querySelectorAll('.valueInputMarasost').forEach(input => {
+    input.addEventListener('input', function () {
+        this.previousElementSibling.textContent = this.value;
+    });
+});
+
+let btnEnviarCalificacionesMarasost =document.getElementById ("btn-enviar-calificaciones-marasost")
+btnEnviarCalificacionesMarasost.addEventListener("click", ()=>{
+    let creatividad = document.getElementById ("valueCreatividadInputMarasost").value
+    let funcionalidad = document.getElementById ("valueFuncionalidadInputMarasost").value
+    let gustoPersonal = document.getElementById ("valueGustoPersonalInputMarasost").value
+    let inputVotante = document.getElementById ("input-votante-marasost").value
+    fetch('https://discord.com/api/webhooks/1275584883300896858/mCO3fHigj8VL8Qt2H14d5_ZyzyPTnnwqpBgReXxXR6ZBm8jM8eOraDSEQLFD0aXhezTT', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            content: `----------------------------------- \n**Nether de Marasost **\nVotacion de ${inputVotante}\nCreatividad: ${creatividad}\nFuncionalidad: ${funcionalidad}\nGusto personal: ${gustoPersonal}\n-----------------------------------`
+        })
+    })
+
+    btnEnviarCalificacionesMarasost.setAttribute("disabled", "disabled")
+    btnEnviarCalificacionesMarasost.value = ("Enviado ✔")
+    btnEnviarCalificacionesMarasost.classList.add ("btn-seleccionado")
+
+})
+
+
 
 
 
