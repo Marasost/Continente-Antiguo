@@ -195,7 +195,7 @@ footer p {
     border-bottom-right-radius: 10px ;
     margin-left: -100px;
     margin-top: 10px;
-    width: 130px;
+    width: 160px;
     height: 30px;
     background-color: rgb(253, 253, 78);
 }
@@ -237,11 +237,15 @@ footer p {
     background-color: rgb(238, 225, 153);
 }
 
+.seccion-participar button:disabled {
+    color: black;
+}
 
-.seccion-participar button:hover {
+
+/*.seccion-participar button:hover {
     background-color: rgba(238, 225, 153, 0.795);
     transition: 0.3s;
-}
+}*/
 
 .mainModalConcurso {
     width: auto;
