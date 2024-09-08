@@ -1,15 +1,15 @@
 const monumentos = [
     {
-        "nombre": "Monumento Colosal",
-        "descripcion": "Contrucción de más de 18 chunks"
+        "nombre": "Monumento Coloso",
+        "descripcion": "Construcción de más de 18 chunks"
     },
     {
         "nombre": "Monumento Modesto",
-        "descripcion": "Contrucción de más de 10 chunks"
+        "descripcion": "Construcción de más de 10 chunks"
     },
     {
         "nombre": "Monumento Efímero",
-        "descripcion": "Contrucción de más de 4 chunks"
+        "descripcion": "Construcción de más de 4 chunks"
     }
 ]
 
@@ -19,12 +19,12 @@ const hitos = [
         "descripcion": "Damage_taken: Recibe 10.000 de daño"
     },
     {
-        "nombre": "Inmoratalidad",
-        "descripcion": "Time_since_death: Permanece 2.5 días de juego sin morir"
+        "nombre": "Inmortalidad",
+        "descripcion": "Time_since_death: Permanece 5 días de juego sin morir"
     },
     {
         "nombre": "Como un felino",
-        "descripcion": "Sleep:in_bed: Duerme 500 veces en una cama"
+        "descripcion": "Sleep_in_bed: Duerme 500 veces en una cama"
     },
     {
         "nombre": "Comerciante prominente",
