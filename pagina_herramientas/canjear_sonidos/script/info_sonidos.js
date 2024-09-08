@@ -2,7 +2,7 @@ const audios = [
     {
         "nombre": "Descenso del Pilar del Mundo",
         "ruta": "sounds/descenso_de_pilar_del_mundo.wav",
-        "requisito": "Requiere:"
+        "requisito": "Requiere VIP"
     },
     {
         "nombre": "Desánimos",
